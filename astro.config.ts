@@ -24,6 +24,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 export default defineConfig({
 
   site: 'https://elivery-se.github.io',
+  base: 'www.elivery.se',
   output: 'static',
 
   integrations: [
