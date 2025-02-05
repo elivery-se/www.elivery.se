@@ -6,10 +6,7 @@ import Header from '~/components/widgets/Header.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-import Content from '~/components/widgets/Content.astro';
-//import Testimonials from '~/components/widgets/Testimonials.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-//import Stats from '~/components/widgets/Stats.astro';
 
 import Button from '~/components/ui/Button.astro';
 import Image from '~/components/common/Image.astro';
@@ -52,7 +49,7 @@ const metadata = {
   <Hero2
     tagline="Home Delivery"
     image={{
-      src: 'https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      src: '~/assets/images/hero.png',
       alt: 'eLivery Hero Image',
     }}
   >
@@ -83,7 +80,6 @@ const metadata = {
   </Hero2>
 
   <!-- Features3 Widget ************** -->
-
   <Features3
     id="features"
     title="Hur fungerar elivery?"
@@ -92,33 +88,33 @@ const metadata = {
     columns={2}
     items={[
       {
-        title: 'Handling',
-        description: `När du beställer måste du ange adressen till din eliverybox som leveransadress och ange din elivery-e-postadress som du hittar i appen. På så sätt säkerställer vi att varorna och information om leveransen hanteras korrekt.`,
+        title: 'Handla',
+        description: 
+          `När du beställer måste du använda adressen till din elivery-box, inte din hemadress. Denna adress hittar du ovan. På så sätt ser vi till att varorna hamnar rätt och leveransen hanteras korrekt.`,
         icon: 'tabler:square-number-1',
       },
       {
         title: 'Avisering',
-        description:
-          'Du kommer automatiskt att få all information och meddelanden om din beställning till din vanliga e-postadress och telefon från det ställe du beställde från. Fungerar precis som vanligt.',
+        description: 'För att systemet ska kunna hämta information om dina leveranser synkroniseras appen med din e-post. Det är viktigt att du gör detta eftersom det hjälper systemet att ge dig åtkomst, hålla dig uppdaterad och säkra varor. Men du får all information och notiser om din beställning från det ställe du beställt från, precis som vanligt.',
         icon: 'tabler:square-number-2',
       },
       {
         title: 'Säker hantering',
-        description: 'Din leverans sker till eliveryboxen och hålls under strikt säkerhet, försäkrad och korrekt förvarad. Du kan hämta den när det passar dig.',
+        description: 'Din leverans sker till leveranslådan och hålls under strikt säkerhet, försäkrad och korrekt förvarad. Du kan hämta den när det passar dig.',
         icon: 'tabler:square-number-3',
       },
       {
         title: 'Upphämtning',
-        description: `När du får besked om att leveranserna har anlänt går du bara till eliveryboxen och scannar QR-koden vid dörren och identifierar dig. Dörren öppnas och du kan hämta dina varor.`,
+        description: 'När du får besked om att leveranserna har kommit går du bara till leveransboxen och scannar QR-koden vid dörren och identifierar dig. Dörren öppnas och du kan hämta dina varor. På vägen ut bekräftar du hämtning genom att skanna QR-koden på insidan.',
         icon: 'tabler:square-number-4',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1521517407911-565264e7d82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
-      alt: 'Colorful Image',
+      src: '~/assets/images/steps.png',
+      alt: 'Step by step',
+      class: 'bg-transparent w-full object-contain',
     }}
   />
-
   <!-- Content Widget **************** -->
 
   <!--Content
